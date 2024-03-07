@@ -1,0 +1,72 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Didot', serif;
+    background-color: #f2f1ee;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+.container {
+    width: 100%;
+}
+
+/* NAVIGATION BAR STYLES */
+#header {
+    background: #fff;
+    
+    width: 100%;
+    z-index: 10; /* Ensures nav is above other content */
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+.nav_menu_list {
+    display: flex;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.nav_list {
+    margin: 0 40px;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1.3em;
+    transition: color 0.3s;
+}
+
+.nav-link:hover, .active-link {
+    color: #708090;
+}
+
+
+/* SECTION STYLING */
+section {
+    padding: 60px 10%;
+    height: auto; /* Change based on content size */
+    min-height: 100vh; /* Minimum height */
+}
+
+/* RESPONSIVE STYLING */
+@media (max-width: 768px) {
+    .nav_menu_list, .nav_list {
+        flex-direction: row; /* Keeps items horizontal */
+    }
+
+    .nav_list {
+        margin: 5px 10px; /* Reduced space between items */
+    }
+
+    .nav-link {
+        font-size: 0.8em; /* Smaller font size for better fit */
+    }
+}
