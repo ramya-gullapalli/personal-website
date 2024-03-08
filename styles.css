@@ -7,14 +7,8 @@ body, html {
     scroll-behavior: smooth; /* Enables smooth scrolling */
 }
 
-.container {
-    width: 100%;
-}
-
-/* NAVIGATION BAR STYLES */
+/* NAVIGATION BAR STYLING */
 #header {
-    background: #fff;
-    
     width: 100%;
     z-index: 10; /* Ensures nav is above other content */
 }
@@ -34,7 +28,7 @@ body, html {
 }
 
 .nav_list {
-    margin: 0 40px;
+    margin: 0 2vw;
 }
 
 .nav-link {
@@ -51,10 +45,71 @@ body, html {
 
 /* SECTION STYLING */
 section {
-    padding: 60px 10%;
+    padding: 6.25vw 10%;
     height: auto; /* Change based on content size */
     min-height: 100vh; /* Minimum height */
 }
+
+/* HOME PAGE STYLING */
+.home-section {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    position: relative;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto; 
+    height: auto;
+}
+
+.intro-text {
+    position: absolute; 
+    top: -31vw; 
+    font-size: 5vw; 
+    font-weight: bold;
+    transform: scaleY(1.4);
+    letter-spacing: 5px;
+    color: black;
+    z-index: 4; 
+    margin: 0; /* Reset margin to help with exact positioning */
+}
+
+.background-image-left {
+    position: absolute;
+    top: -2vw;
+    left: 5vw;
+    width: 18vw; 
+    z-index: 3;
+    margin: 0 auto; 
+}
+
+.background-image-right {
+    position: absolute;
+    top: -20vw;
+    left: 56vw;
+    width: 18vw;
+    z-index: 3; 
+    margin: 0 auto; 
+}
+
+.profile-image {
+    position: absolute;
+    width: 40vw;
+    z-index: 2; 
+    align-self: center; 
+    margin: 0 auto; 
+}
+
 
 /* RESPONSIVE STYLING */
 @media (max-width: 768px) {
@@ -69,4 +124,5 @@ section {
     .nav-link {
         font-size: 0.8em; /* Smaller font size for better fit */
     }
+
 }
