@@ -543,7 +543,7 @@ p {
     resize: none;
   }
 
-  .input-box ::placeholder {
+ .input-box ::placeholder {
     font-family: 'Didot', serif;
   }
   .right-side .message-box{
@@ -556,21 +556,23 @@ p {
     display: inline-block;
     margin-top: 12px;
   }
-  .right-side .button input[type="button"]{
+  .right-side .button input[type="submit"]{
     font-family: 'Didot', serif;
-    color: #fff;
+    color: black;
     font-size: 18px;
     outline: none;
-    border: none;
+    border: 1px solid black;
     padding: 8px 16px;
     border-radius: 6px;
-    background: black;
+    background: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
   }
-  .button input[type="button"]:hover{
+  .button input[type="submit"]:hover{
     background: #556b2f;
+    color: #fff;
   }
+
   @media (max-width: 950px) {
     .container{
       width: 90%;

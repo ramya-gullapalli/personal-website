@@ -384,52 +384,53 @@
         </section> 
 
         <!-- Contact Section -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="content">
-                  <div class="left-side">
-                    <div class="phone details">
-                      <a href="tel:7709103435" class="social-icon" target="_blank">
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="content">
+            <div class="left-side">
+                <div class="phone details">
+                    <a href="tel:7709103435" class="social-icon" target="_blank">
                         <img src="images/phone-logo.png" alt="phone number">
                     </a>
-                        <div class="topic">PHONE</div>
-                    </div>
-                    <div class="linkedin details">
-                        <a href="https://www.linkedin.com/in/ramya-gullapalli-9005b21b8/" class="social-icon" target="_blank">
-                          <img src="images/linkedin-logo.jpeg" alt="phone number">
-                      </a>
-                          <div class="topic">LINKEDIN</div>
-                    </div>
-                    <div class="github details">
-                        <a href="https://github.com/ramya-gullapalli" class="social-icon" target="_blank">
-                          <img src="images/github-logo.png" alt="phone number">
-                      </a>
-                          <div class="topic">GITHUB</div>
-                    </div>
-                  </div>
-                  <div class="right-side">
-                    <div class="content-text">CONTACT ME!</div>
-                  <form action="#">
+                    <div class="topic">PHONE</div>
+                </div>
+                <div class="linkedin details">
+                    <a href="https://www.linkedin.com/in/ramya-gullapalli-9005b21b8/" class="social-icon" target="_blank">
+                        <img src="images/linkedin-logo.jpeg" alt="phone number">
+                    </a>
+                    <div class="topic">LINKEDIN</div>
+                </div>
+                <div class="github details">
+                    <a href="https://github.com/ramya-gullapalli" class="social-icon" target="_blank">
+                        <img src="images/github-logo.png" alt="phone number">
+                    </a>
+                    <div class="topic">GITHUB</div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="content-text">CONTACT ME!</div>
+                <form action="https://formspree.io/f/xpwawybp" method="POST">
                     <div class="input-box">
-                      <input type="text" placeholder="Enter your name">
+                        <input type="text" name="name" placeholder="Enter your name">
                     </div>
                     <div class="input-box">
-                        <input type="text" placeholder="Enter your subject">
-                      </div>
+                        <input type="text" name="subject" placeholder="Enter your subject">
+                    </div>
                     <div class="input-box">
-                      <input type="text" placeholder="Enter your email">
+                        <input type="email" name="email" placeholder="Enter your email">
                     </div>
                     <div class="input-box message-box">
-                        <input type="text" placeholder="Enter your message">
+                        <textarea name="message" placeholder="Enter your message"></textarea>
                     </div>
                     <div class="button">
-                      <input type="button" value="Send Now">
+                        <input type="submit" value="Send Now">
                     </div>
-                  </form>
-                </div>
-                </div>
-              </div>
-        </section>
+                </form>
+                <div id="responseMessage"></div>
+            </div>
+        </div>
+    </div>
+</section>
         
         </main>
     <script src="script.js"></script>
